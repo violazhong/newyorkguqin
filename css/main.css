@@ -273,19 +273,19 @@ a:hover, a:focus {
 }
 
 .logo-text {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 2.2rem;
-	font-weight: 300;
-	color: #ffffff;
-	text-decoration: none;
+	font-family: 'Montserrat', sans-serif !important;
+	font-size: 22px !important;
+	font-weight: 300 !important;
+	color: #ffffff !important;
+	text-decoration: none !important;
 	letter-spacing: 4px;
 	text-transform: uppercase;
 	text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
 .logo-text:hover {
-	color: #ffffff;
-	text-decoration: none;
+	color: #ffffff !important;
+	text-decoration: none !important;
 	opacity: 0.8;
 }
 
