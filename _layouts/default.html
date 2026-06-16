@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="Ting Ling Qin She | 听泠琴社">
+	<meta property="og:description" content="">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/modernizr-2.7.1.js"></script>
+
+  {% if page.extra_style %}<style>
+    {{ page.extra_style }}
+  </style>{% endif %}
+
+</head>
+
+<body>
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-collapse collapse">
+          <a class="logo-text" href="index.html">Ting Ling</a>
+          <ul class="nav navbar-nav navbar-right">
+            {% include nav_items.html %}
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    {{ content }}
+
+    <footer>
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-8 margin-20">
+            <ul class="list-inline social">
+              <li>Connect with us - <a href="mailto:mingmeiyip@gmail.com">mingmeiyip@gmail.com</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-4 text-right">
+            <p><small>Copyright &copy; 2026. All rights reserved. <br>
+	            Created by Haodan Tan</small></p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    </body>
+</html>
